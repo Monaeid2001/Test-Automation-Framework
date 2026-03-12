@@ -64,7 +64,7 @@ public class TestNGListeners implements ISuiteListener, IExecutionListener, ITes
     @Override
     public void beforeInvocation(org.testng.IInvokedMethod method, org.testng.ITestResult testResult) {
         if(method.isTestMethod()){
-            if(testResult.getInstance()instanceof UITest) {
+            if(testResult.getInstance().getClass().isAnnotationPresent(UITest.class)) {
                 ScreenRecordManager.startRecording();
 
             }
