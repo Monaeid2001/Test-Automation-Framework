@@ -36,7 +36,7 @@ public class ProductsPage {
     }
 
     private By hoverOnProduct(String productName) {
-        return By.xpath("//div[@class='features_items']//div[@class='features_items'] //div[@class='productinfo text-center'] /p[.='" + productName + "']");
+        return By.xpath("//div[@class='features_items']//div[@class='productinfo text-center'] /p[.='" + productName + "']");
     }
 
 
