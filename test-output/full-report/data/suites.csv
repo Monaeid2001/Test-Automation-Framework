@@ -1,2 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Verify that a user can successfully login with valid credentials","11065","validLoginTC","Automation Exercise","2026-03-10","passed","2026-03-10","com.automationexercise.tests.ui.LoginTest","Surefire test","com.automationexercise.tests.ui.LoginTest","validLoginTC"
