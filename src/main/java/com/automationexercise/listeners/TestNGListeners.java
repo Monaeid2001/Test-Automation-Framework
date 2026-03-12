@@ -64,7 +64,7 @@ public class TestNGListeners implements ISuiteListener, IExecutionListener, ITes
     @Override
     public void beforeInvocation(org.testng.IInvokedMethod method, org.testng.ITestResult testResult) {
         if(method.isTestMethod()){
-            if(testResult.getInstance().getClass().isAnnotationPresent(UITest.class)) {
+            if(testResult.getInstance()instanceof UITest) {
                 ScreenRecordManager.startRecording();
 
             }
@@ -76,7 +76,7 @@ public class TestNGListeners implements ISuiteListener, IExecutionListener, ITes
     public void afterInvocation(org.testng.IInvokedMethod method, org.testng.ITestResult testResult) {
         WebDriver driver = null;
         if(method.isTestMethod()){
-            if(testResult.getInstance()instanceof UITest){
+            if(testResult.getInstance().getClass().isAnnotationPresent(UITest.class)){
                 ScreenRecordManager.stopRecording(testResult.getName());
                 if(testResult.getInstance() instanceof WebDriverProvider provider){
                     driver = provider.getWebDriver(); //initialize driver from WebDriverProvider interface implemented in test class
