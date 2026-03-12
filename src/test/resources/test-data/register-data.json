@@ -1,0 +1,25 @@
+{
+  "name": "Automation_Test",
+  "email": "automationTest_",
+  "titleMale": "Mr",
+    "titleFemale": "Mrs",
+  "password": "P@ssw0rd",
+    "day": "1",
+    "month": "January",
+    "year": "1990",
+    "firstName": "Automation",
+    "lastName": "Test",
+    "company": "Automation Test Company",
+    "address1": "123 Automation Street",
+    "address2": "Suite 456",
+    "city": "Automation City",
+    "state": "California",
+    "zipcode": "12345",
+    "country": "India",
+  "mobileNumber": "1234567890",
+  "messages":
+  {
+    "error": "Email Address already exist!"
+  }
+
+}

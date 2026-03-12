@@ -1,0 +1,31 @@
+package com.automationexercise.utils.logs;
+
+import org.apache.logging.log4j.Logger;
+
+public class LogsManager {
+    public static final String LOGS_PATH = com.automationexercices.utils.report.AllureConstants.USER_DIR + "/test-output/Logs/";
+
+    private static Logger logger(){
+        return org.apache.logging.log4j.LogManager.getLogger(Thread.currentThread().getStackTrace()[3].getClassName());
+    }
+    public static void info(String... message){ //info("e.message"+" " +"e.message"); > info("e.message", "e.message");
+
+        logger().info(String.join(" ",message));
+    }
+    public static void error(String... message){
+        logger().error(String.join(" ",message));
+    }
+    public static void debug(String... message){
+
+        logger().debug(String.join(" ",message));
+    }
+    public static void warn(String... message){
+
+        logger().warn(String.join(" ",message));
+    }
+    public static void fatal(String... message){
+
+        logger().fatal(String.join(" ",message));
+    }
+}
+

@@ -1,0 +1,45 @@
+{
+  "name": "Automation_Checkout",
+  "email": "automationCheckout_",
+  "titleMale": "Mr",
+  "titleFemale": "Mrs",
+  "password": "P@ssw0rd",
+  "day": "1",
+  "month": "January",
+  "year": "1990",
+  "firstName": "Automation_firstname",
+  "lastName": "Automation_lastname",
+  "company": "Automation Test Company",
+  "address1": "123 Automation Street",
+  "address2": "Suite 456",
+  "city": "Automation City",
+  "state": "California",
+  "zipcode": "12345",
+  "country": "India",
+  "mobileNumber": "1234567890"
+,
+  "product":
+  {
+    "name": "Men Tshirt",
+    "price":"Rs. 400",
+    "quantity": "1",
+    "total": "Rs. 400"
+
+  }
+,
+  "card":
+  {
+    "name": "Automation Checkout",
+    "number": "1234 5678 9012 3456",
+    "cvc": "123",
+    "expiryMonth": "12",
+    "expiryYear": "2035"
+  },
+  "messages":
+  {
+    "cartAdded": "Your product has been added to cart.",
+    "paymentSuccess": "ORDER PLACED!"
+  },
+  "invoiceName": "invoice.txt"
+
+}

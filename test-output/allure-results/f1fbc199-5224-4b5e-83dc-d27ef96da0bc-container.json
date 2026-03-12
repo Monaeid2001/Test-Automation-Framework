@@ -1,0 +1,1 @@
+{"uuid":"f1fbc199-5224-4b5e-83dc-d27ef96da0bc","name":"com.automationexercise.tests.ui.LoginTest","children":["b1d30079-3b49-437b-9a68-cc9e829a375f"],"befores":[{"name":"precondition","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1773132500435,"stop":1773132500458}],"afters":[],"start":1773132500374,"stop":1773132529142}
